@@ -1,0 +1,218 @@
+:root{
+    --blanco: #ffffff;
+    --oscuro: #212121;
+    --primario: #FFC107;
+    --secundario: #0097A7;
+    --gris: #757575;
+    --grisClaro:#DFE9F3;
+
+}
+
+/*Este codigo utilizado en todos los proyectos*/
+/*Globales*/
+html{
+    font-size:62.5%;
+    box-sizing: border-box; /*Hack para box model*/
+}
+*, *:before, *:after{
+    box-sizing: inherit;
+}
+body{
+    font-size: 16px; /*1rem=10px */
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-image: linear-gradient(to top, var(--grisClaro) 0%, var(--blanco)100%);
+
+}
+
+body{
+    font-family: 'Verdana';
+    text-align: center;
+    margin: 0; /* Eliminar el margen predeterminado del body */
+    padding: 0; /* Eliminar el padding predeterminado del body */
+}
+.contenedor{
+    max-width: 120rem;
+    margin: 0 auto;
+   
+}
+h1{
+    text-align: center;
+}
+span{
+    display: inline-block;
+    background-color: #ccc;
+    width: 100px;
+    height: 20px;
+    text-align: center;
+    border-radius: 6px;
+    cursor: pointer;
+    line-height: 20px;
+}
+.texto{
+    max-width: 500px;
+    margin: auto;
+    border: 1px solid #ccc;
+    padding: 5px;
+    background-color: rgb(244, 244, 244);;
+}
+
+.texto p{
+    line-height: 28px;
+}
+
+.opciones{
+    background-color: rgb(244, 244, 244);
+    max-width: 500px;
+    margin: 30px auto;
+    border: 1px solid #ccc;
+    min-height: 40px;
+
+}
+
+.opciones .palabra{
+    display: inline-block;
+    background-color: cadetblue;
+    color: #fff;
+    margin: 5px;
+    padding: 2px 5px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+.opciones .palabra:hover{
+    background-color: #000;
+    color:#fff;
+}
+#resultado{
+    text-align: center;
+}
+
+button{
+    display: block;
+    margin: auto;
+    padding: 5px 10px;
+    background-color: #07789b;
+    border: none;
+    color:#fff;
+    cursor: pointer;
+}
+#palabras {
+    margin-bottom: 10px; /* Espacio entre el combo box y el botón */
+    padding: 8px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+    cursor: pointer;
+}
+.nav-bg{
+    background-color: var(--secundario);
+}
+
+.navegacion-principal {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.navegacion-principal a{
+    color: var(--blanco);
+    text-decoration: none;
+    font-size: 2rem; /* Tamaño de la letra de la barra de navegacion */
+    font-weight: 700; /* Para que se vea en negrita */
+    padding: 1rem;
+    text-align: center;
+}
+.navegacion-principal a:hover{
+    background-color: var(--primario);
+    color:var(--oscuro);
+}
+
+
+@media (min-width: 768px) {
+    .navegacion-principal{
+        flex-direction: row;
+    }
+}
+
+
+
+/* efecto para que cuando se pase el mouse se vea amarillo */
+
+/*media para una telefono*/
+@media (min-width: 480px) {
+    h1{
+        .navegacion-principal{
+            flex-direction: row;
+        }
+
+    }
+}
+/* Media para una tablet*/
+@media (min-width: 768px) {
+    h1{
+        .navegacion-principal{
+            flex-direction: row;
+
+        }
+    } 
+}
+
+/* Aqui vendra los estilos de la parte de abajo del ejercicio 2*/
+/* Estilos adicionales para las imágenes y las palabras */
+/* Estilos adicionales para las imágenes y las palabras */
+.contenedor-imagen {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+.imagen {
+    position: relative;
+    width: 200px; /* Nuevo tamaño para las imágenes */
+    height: 150px; /* Nuevo tamaño para las imágenes */
+    margin-bottom: 20px; /* Espacio entre las imágenes */
+    border: 1px solid #ccc;
+    cursor: pointer;
+    overflow: hidden; /* Para evitar que las palabras se desborden */
+}
+.imagen img {
+    width: 100%; /* Ajuste para asegurar que la imagen se muestra completamente */
+    height: 100%; /* Ajuste para asegurar que la imagen se muestra completamente */
+    object-fit: contain; /* Ajuste para mostrar toda la imagen dentro del contenedor */
+    object-position: center; /* Ajuste para centrar la imagen dentro del contenedor */
+}
+.espacio-drop {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 30px;
+    background-color: rgba(0, 123, 255, 0.1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+}
+.palabra {
+    display: inline-block;
+    padding: 5px 10px;
+    margin: 5px;
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+}
+
+#comprobar {
+    display: block;
+    margin: 20px auto; /* Espacio adicional entre el botón y el resultado */
+    padding: 10px 20px;
+    background-color: #007bff;
+    border: none;
+    color: white;
+    cursor: pointer;
+    border-radius: 6px;
+    font-size: 16px;
+}
+#resultado {
+    text-align: center;
+    font-size: 18px; /* Tamaño de fuente para el resultado */
+    margin-top: 20px; /* Espacio adicional encima del resultado */
+}
+

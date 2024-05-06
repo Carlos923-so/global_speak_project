@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Completa el texto </title>
+    <link rel="stylesheet" href="css/normalize.css">
+
+    <link rel="preload" href="css/estilosnivel1.css" as="estilosnivel1">
+    <link href="css/estilosnivel1.css" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1 class="titulo">Global Speak </h1>
+     </header>
+    <div class="nav-bg">
+        <nav class="navegacion-principal contenedor">
+            <a href="index.html">Inicio</a> 
+            <a href="niveles.html">Niveles</a>
+            <a href="material.html">Material</a>
+            <a href="contacto.html">Contacto</a>
+            
+        </nav> 
+     </div>
+    <h1>Complete the text</h1>
+    <h2>Is or Are</h2>
+    <section class="texto">
+        <p>Studying at the Technological University of Jalisco<span id="0"></span> an exciting experience for Andre and his friends. Andre <span id="1"></span> deeply engrossed in his systems studies, while his friends <span id="2"></span>  pursuing various other disciplines. Together, they <span id="3"></span> a dynamic group that <span id="4"></span> constantly exploring new ideas and projects. Maria, one of Andre's closest friends, <span id="5"></span> studying graphic design and <span id="6"></span> often inspired by Andre's innovative approach to problem-solving. </p>
+    </section>
+
+    <section>
+        <label for="palabras">Elige una palabra:</label>
+        <select id="palabras">
+            <option value="are">are</option>
+            <option value="is">is</option>
+        </select>
+        <button id="agregar" onclick="agregarPalabra()">Agregar</button>
+    </section>
+
+    <section id="opciones">
+        <!-- Aquí se colocarán las palabras seleccionadas -->
+    </section>
+
+    <h2 id="resultado"></h2>
+
+    <button id="comprobar" style="display: none;" onclick="comprobar()">Comprobar</button>
+    
+    <script src="script.js"></script>
+
+</body>
+</html>
